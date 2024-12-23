@@ -4,7 +4,7 @@
 
 
 
-## Configuration of the YSZ-model environment
+## Configuration of the DurgSolAtten environment
 
 ```
 python==3.6
