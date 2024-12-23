@@ -1,4 +1,4 @@
-# YZS-model: A Predictive Model for Organic Drug Solubility Based on Graph Convolutional Networks and Transformer-Attention.
+# DurgSolAtten: An Interpretable Hybrid Predictive Framework for Organic Drug Solubility Enhancement via Graph Convolutional Networks and Transformer-Attention Modules
 
 <img width="779" alt="image" src="https://github.com/xunyoyo/YZS-Model/assets/33387866/b0b34260-67ac-4d64-971f-93f009c4eb40">
 
@@ -40,7 +40,6 @@ authors:
     + e-mail:zxsdsama@gmail.com
 + Haowei Ming, Peking University (PRC, Beijing)
 + Jian He, Xinjiang University (PRC, Xinjiang)
-+ Yao Lu, Shihezi University (PRC, Xinjiang)
 + Junhong Chen, {South China University of Technology, NetEase Inc.} (PRC, {Guangdong, Zhejiang})
 
 Statement:
