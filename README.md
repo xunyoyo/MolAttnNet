@@ -43,3 +43,43 @@ https://github.com/ltorres97/FS-CrossTR
 https://github.com/waqarahmadm019/AquaPred
 ```
 When using the above-mentioned open-source code, we have already indicated this in the documents.
+
+## Implementation Details
+
+We focused on optimizing the hyperparameters of our MolAttnNet to maximize predictive accuracy for organic drug solubility. Using the [hyperopt](https://github.com/hyperopt/hyperopt) library and the Tree-structured Parzen Estimator (TPE) algorithm, we systematically explored several key hyperparameters, including:
+
+- Learning rate
+- Feature vector dimension
+- Dropout rate
+- Transformer layer depth
+- Number of attention heads in each layer
+- Batch size
+
+Hyperopt training was configured to stop after 200 iterations, with details recorded in a log file. Our search strategy and final choices are summarized below.
+
+### Final Model Configuration
+
+- **Transformer depth:** 6 layers
+- **Attention heads per layer:** 8 (dimension: 92)
+- **Linear Layer dimension:** 256
+- **Dropout rate:** 0.25
+- **Number of input features:** 92
+- **Feature dimension:** 128
+- **Final dropout (finely tuned):** 0.2519
+
+These optimized parameters, derived from extensive experimentation and validation, significantly enhanced the MolAttnNet’s performance in solubility prediction.
+
+### Hyperparameter Search Space
+
+| Item      | Range           | Selection Method   |
+|-----------|-----------------|-------------------|
+| `lr`      | (0.0003, 0.0007) | `hp.uniform`      |
+| `dim`     | (92, 128, 2)     | `hp.quniform`     |
+| `dropout` | (0.25, 0.35)     | `hp.uniform`      |
+| `depth`   | [2, 4, 6, 8, 12] | `hp.choice`       |
+| `heads`   | [4, 8, 12, 16]   | `hp.choice`       |
+| `batch_size` | (24, 72, 8)   | `hp.quniform`     |
+
+- `hp.uniform` — samples uniformly within the specified range  
+- `hp.choice` — picks from the specified list of options  
+- `hp.quniform` — samples discrete values within the range at specified intervals
