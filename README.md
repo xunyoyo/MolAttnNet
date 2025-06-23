@@ -1,4 +1,4 @@
-# DurgSolAtten: An Interpretable Hybrid Predictive Framework for Organic Drug Solubility Enhancement via Graph Convolutional Networks and Transformer-Attention Modules
+# MolAttnNet: A Predictive Model for Organic Drug Solubility Based on Graph Convolutional Networks and Transformer-Attention
 
 <img width="779" alt="image" src="https://github.com/xunyoyo/YZS-Model/assets/33387866/b0b34260-67ac-4d64-971f-93f009c4eb40">
 
@@ -23,7 +23,7 @@ Other packages can be found from `requirements.txt`.
 
 You can download the training and testing dataset from:
 
-[All datasets in the raw folders.](https://github.com/xunyoyo/YZS-Model/tree/main/Datasets)
+[All datasets in the raw folders.](https://github.com/xunyoyo/MolAttnNet/tree/main/Datasets)
 
 ## Useage
 
@@ -34,13 +34,6 @@ You can download the training and testing dataset from:
 + `test.py`:Tests and evaluates the YZS model.
 
 ## About
-
-authors:
-+ Chenxu Wang, Shihezi University (PRC, Xinjiang)
-    + e-mail:zxsdsama@gmail.com
-+ Haowei Ming, Peking University (PRC, Beijing)
-+ Jian He, Xinjiang University (PRC, Xinjiang)
-+ Junhong Chen, {South China University of Technology, NetEase Inc.} (PRC, {Guangdong, Zhejiang})
 
 Statement:
 + Part of code come from:
