@@ -4,7 +4,7 @@
 
 
 
-## Configuration of the DurgSolAtten environment
+## Configuration of the MolAttnNet environment
 
 ```
 python==3.6
